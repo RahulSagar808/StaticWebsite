@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyline Builders</title>
+    <meta name="description" content="Professional real estate builder website showcasing services, premium properties, gallery highlights, and contact information." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+    <div class="site-shell">
+        <header class="site-header">
+            <nav class="site-nav">
+                <a class="brand-mark" href="#home">
+                    <span class="brand-icon">SB</span>
+                    <span>
+                        <strong>Skyline Builders</strong>
+                        <small>Luxury Spaces, Timely Delivery</small>
+                    </span>
+                </a>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Service</a>
+                    <a href="#properties">Our Property</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            <section class="hero-section" id="home">
+                <div class="hero-copy">
+                    <span class="eyebrow">Premium Builder & Developer</span>
+                    <h1 id="hero-title"></h1>
+                    <p id="hero-text"></p>
+                    <div class="hero-actions">
+                        <a class="primary-btn" href="#properties">Explore Properties</a>
+                        <a class="secondary-btn" href="#contact">Book A Consultation</a>
+                    </div>
+                    <div class="hero-metrics" id="hero-metrics"></div>
+                </div>
+                <div class="hero-panel">
+                    <div class="hero-card">
+                        <p class="card-kicker">Signature Project</p>
+                        <h2 id="highlight-name"></h2>
+                        <p id="highlight-text"></p>
+                        <div class="hero-badges" id="highlight-badges"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" id="services">
+                <div class="section-heading">
+                    <span class="eyebrow">Services</span>
+                    <h2>End-to-end real estate development solutions</h2>
+                    <p>We design, develop, market, and hand over spaces built for modern families and future-ready businesses.</p>
+                </div>
+                <div class="service-grid" id="service-grid"></div>
+            </section>
+
+            <section class="section-block properties-section" id="properties">
+                <div class="section-heading">
+                    <span class="eyebrow">Our Property</span>
+                    <h2>Curated developments crafted for lifestyle and long-term value</h2>
+                    <p>Every project blends architecture, location advantage, and practical amenities to help buyers invest with confidence.</p>
+                </div>
+                <div class="property-grid" id="property-grid"></div>
+            </section>
+
+            <section class="section-block gallery-section" id="gallery">
+                <div class="section-heading">
+                    <span class="eyebrow">Gallery</span>
+                    <h2>Project moments, design details, and construction milestones</h2>
+                    <p>A visual glimpse into our residential towers, villa communities, and commercial destinations.</p>
+                </div>
+                <div class="gallery-grid" id="gallery-grid"></div>
+            </section>
+
+            <section class="section-block contact-section" id="contact">
+                <div class="contact-copy">
+                    <span class="eyebrow">Contact</span>
+                    <h2>Let’s build your next address with confidence</h2>
+                    <p id="contact-text"></p>
+                    <div class="contact-details" id="contact-details"></div>
+                </div>
+                <form class="contact-form">
+                    <div class="field-group">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" placeholder="Enter your full name" />
+                    </div>
+                    <div class="field-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" placeholder="Enter your phone number" />
+                    </div>
+                    <div class="field-group">
+                        <label for="interest">Interested In</label>
+                        <select id="interest"></select>
+                    </div>
+                    <div class="field-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about the property or service you need"></textarea>
+                    </div>
+                    <button type="button" class="primary-btn wide-btn">Request A Call Back</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <p class="footer-brand">Skyline Builders</p>
+                <p>Building elegant homes, investment-ready properties, and trusted communities since 2008.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#services">Services</a>
+                <a href="#properties">Properties</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/site.js"></script>
+</body>
+</html>
